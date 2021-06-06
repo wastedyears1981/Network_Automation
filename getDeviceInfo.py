@@ -18,16 +18,16 @@ headers = {
     'Authorization': auth
 }
 
-
+# Get list of hardware devices connected to CDNAC
 def getDeviceList():
     url = baseURL + "/dna/intent/api/v1/network-device"
     response = requests.get(url, headers=headers, data=payload)
-    print(response.text)
+    output = response.json()
+    
 
-
-def getInterfaces():
+# Get Interface details for device
+def getInterfaces(device):
     url = baseURL + "/InterfaceURL" # Needs updating, check CDNAC docs
     response = requests.get(url, headers=headers, data=payload)
     print(response)
-
 
