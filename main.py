@@ -1,4 +1,4 @@
-import AuthToken
+from getDeviceInfo import *
 
 
-AuthToken.getAuthToken()
+getDeviceList()
