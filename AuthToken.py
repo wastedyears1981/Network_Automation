@@ -1,16 +1,18 @@
 import requests
 import urllib3
 import DNACconf
+import json
 
 urllib3.disable_warnings()
 baseURL = DNACconf.devURL
 url = baseURL + "/dna/system/api/v1/auth/token"
-payload={}
+payload = {}
 headers = {
-  'Authorization': DNACconf.auth
+    'Authorization': DNACconf.auth
 }
 
 
 def getAuthToken():
-    response = requests.request("POST", url, headers=headers, data=payload)
-    print(response.text)
+    response = requests.post(url, headers=headers, data=payload)
+    output = response.json()
+    return output['Token']
