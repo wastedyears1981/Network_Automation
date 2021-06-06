@@ -1,1 +1,4 @@
-print("Hello World")
+import AuthToken
+
+
+AuthToken.getAuthToken()
