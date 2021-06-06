@@ -1,4 +1,6 @@
 # Configuration data to import into other .py files
+# Variable params only in this file
+
 
 user = 'devnetuser'
 password = 'Cisco123!'
