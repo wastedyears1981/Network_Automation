@@ -16,4 +16,4 @@ def searchIP():
 
 
 #searchIP()
-getDeviceListIP()
+getDeviceListIP() #updated
