@@ -15,4 +15,5 @@ def searchIP():
     print(output['type'])
 
 
-searchIP()
+#searchIP()
+getDeviceListIP()
